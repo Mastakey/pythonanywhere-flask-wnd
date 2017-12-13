@@ -4,11 +4,14 @@ from functools import update_wrapper
 from lib.APP import APP
 from lib.WEBDB import WEBDB
 import json
+import os
 app = Flask('work-notes-do')
 app.debug = True
 
+app.root_path = os.path.dirname(os.path.abspath(__file__))
+
 #CONFIGs
-dbfile = 'db/work-notes-do.db'
+dbfile = app.root_path+'/db/work-notes-do.db'
 
 def getApp():
     #gets the APP object
@@ -105,6 +108,6 @@ def work_update(mytype, id):
     myApp.update(mytype, id, name, content)
     results = myApp.get(mytype, id)
     return json.dumps(results)
-    
+
 if __name__ == '__main__':
     app.run(port=5001)
