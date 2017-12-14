@@ -61,7 +61,7 @@ def crossdomain(origin=None, methods=None, headers=None,
         return update_wrapper(wrapped_function, f)
     return decorator
 
-@app.route(/lawqa)
+@app.route('/lawqa')
 def lawqa():
     return render_template('lawqa.html', title='work-notes-do', main='work-notes-do')
 @app.route('/')
@@ -113,4 +113,4 @@ def work_update(mytype, id):
     return json.dumps(results)
 
 if __name__ == '__main__':
-    app.run(port=5001)
+    app.run(port=5002)
