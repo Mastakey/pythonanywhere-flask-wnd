@@ -61,26 +61,29 @@ def crossdomain(origin=None, methods=None, headers=None,
         return update_wrapper(wrapped_function, f)
     return decorator
 
+@app.route(/lawqa)
+def lawqa():
+    return render_template('lawqa.html', title='work-notes-do', main='work-notes-do')
 @app.route('/')
 def run_main():
     return render_template('main.html', title='work-notes-do', main='work-notes-do')
 
 @app.route('/<mytype>/getall', methods=['GET'])
-@crossdomain(origin='*')
+#@crossdomain(origin='*')
 def work_get_all(mytype):
     myApp = getApp()
     results = myApp.getAll(mytype)
     return json.dumps(results)
 
 @app.route('/<mytype>/get/<id>', methods=['GET'])
-@crossdomain(origin='*')
+#@crossdomain(origin='*')
 def work_get(mytype, id):
     myApp = getApp()
     results = myApp.get(mytype, id)
     return json.dumps(results)
 
 @app.route('/<mytype>/add', methods=['POST'])
-@crossdomain(origin='*')
+#@crossdomain(origin='*')
 def work_add(mytype):
     myApp = getApp()
     #args/input
@@ -92,14 +95,14 @@ def work_add(mytype):
     return json.dumps(results)
 
 @app.route('/<mytype>/delete/<id>', methods=['GET'])
-@crossdomain(origin='*')
+#@crossdomain(origin='*')
 def work_delete(mytype, id):
     myApp = getApp()
     myApp.delete(mytype, id)
     return json.dumps([])
 
 @app.route('/<mytype>/update/<id>', methods=['POST'])
-@crossdomain(origin='*')
+#@crossdomain(origin='*')
 def work_update(mytype, id):
     myApp = getApp()
     args = request.form
