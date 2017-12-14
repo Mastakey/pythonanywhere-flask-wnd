@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+.header-container {
+    display: flex;
+    justify-content: center;
+    color: red;
+    padding: 20px;
+}
+.header {
+    width: 900px;
+    display: flex;
+    color: blue;
+    justify-content: space-between;
+}
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+}
+.signup {
+    margin-left: 20px;
+}
+.jumbo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f05b2c;
+}
+.jumbo {
+    width: 900px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+.jumbo-slogan {
+    width: 100%;
+    justify-content: flex-start;
+    font-family: 'Droid Serif', serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 44px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+.jumbo-search {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.jumbo-search-input {
+    width: 70%;
+    height: 54px;
+    padding-right: 20px;
+    padding-left: 20px;
+    float: left;
+    border: 0px solid #000;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-color: #fff;
+    box-shadow: inset 0 0 8px 0 transparent;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+    color: #806732;
+    font-size: 18px;
+    font-weight: 300;
+}
+.jumbo-search-button {
+    width: 20%;
+    display: block;
+    height: 54px;
+    margin-left: -1px;
+    padding: 4px 29px;
+    float: left;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: #a8863d;
+    -webkit-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0;
+}
+.jumbo-search-button:hover {
+    background-color: #18c7aa;
+}
+.qa-container {
+    display: flex;
+    justify-content: center;
+}
+.qa {
+    width: 900px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.qa-heading {
+    font-family: Lato, sans-serif;
+    color: rgba(0,0,0,.56);
+    margin: 9px 9px 27px;
+    font-weight: 700;
+    font-size: 33px;
+}
