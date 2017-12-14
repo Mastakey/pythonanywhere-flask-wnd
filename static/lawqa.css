@@ -98,6 +98,7 @@
 .qa-container {
     display: flex;
     justify-content: center;
+    height: 400px;
 }
 .qa {
     width: 900px;
@@ -111,4 +112,35 @@
     margin: 9px 9px 27px;
     font-weight: 700;
     font-size: 33px;
+}
+.lawyer-search-container {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+.lawyer-search {
+    width: 900px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.lawyer-search-heading {
+    font-family: Lato, sans-serif;
+    color: rgba(0,0,0,.56);
+    margin: 9px 9px 27px;
+    font-weight: 700;
+    font-size: 33px;
+}
+.footer-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #eee;
+    height: 400px;
+}
+.footer {
+    width: 900px;
+    display: flex;
+    color: blue;
+    justify-content: space-between;
 }
